@@ -39,7 +39,10 @@ class Fragment2 : Fragment() {
         val view =  inflater.inflate(R.layout.fragment_2, container, false)
 
         val button: Button = view.findViewById(R.id.btnFragment3)
+        val button2: Button = view.findViewById(R.id.button5)
         button.setOnClickListener { findNavController().navigate(R.id.action_fragment2_to_mainActivity2) }
+        button2.setOnClickListener { findNavController().navigate(R.id.action_fragment2_to_fragment3) }
+
         return view
     }
 
